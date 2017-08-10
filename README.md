@@ -1,2 +1,2 @@
 # UdemyPong
-Udemy Pong
+https://be2wa.github.io/UdemyPong/
