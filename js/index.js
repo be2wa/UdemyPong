@@ -115,16 +115,16 @@ moveEverything = () => {
 
 drawNet = () => {
     for(var i = 10; i < canvas.height; i += 40) {
-        colorRect(canvas.width/2-1, i, 2, 20, '#fff');
+        colorRect(canvas.width/2-1, i, 2, 20, '#E5E5D9');
     }
 }
 
 drawEverything = () => {
-    // #000 screen
-    colorRect(0, 0, canvas.width, canvas.height, '#000');
+    // black screen
+    colorRect(0, 0, canvas.width, canvas.height, '#121211');
     
     if(showingWinScreen) {
-        canvasContext.fillStyle = '#fff';
+        canvasContext.fillStyle = '#E5E5D9';
         canvasContext.font = '20px sans-serif';
         canvasContext.textAlign = 'center';
         
@@ -141,13 +141,13 @@ drawEverything = () => {
     drawNet();
     
     // left paddle
-    colorRect(0, paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT, '#fff');
+    colorRect(0, paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT, '#E5E5D9');
     
     // right paddle
-    colorRect(canvas.width-PADDLE_THICKNESS, paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGHT, '#fff');
+    colorRect(canvas.width-PADDLE_THICKNESS, paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGHT, '#E5E5D9');
     
     // ball
-    colorCircle(ballX, ballY, 10, '#fff');
+    colorCircle(ballX, ballY, 10, '#E5E5D9');
     
     // player1 score
     canvasContext.font = '14px sans-serif';
